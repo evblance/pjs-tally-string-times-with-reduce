@@ -10,9 +10,7 @@ const trackList = Array.from(playlist.querySelectorAll('li'));
  */
 function tracklistReducer(acc, cur) {
   const durationArr = cur.querySelector('.duration').textContent.split(':');
-  console.log(durationArr);
   const trackSecondDuration = parseInt(durationArr[0] * 60) + parseInt(durationArr[1]);
-  console.log(trackSecondDuration);
   return acc += trackSecondDuration;
 }
 
