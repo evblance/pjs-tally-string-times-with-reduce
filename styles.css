@@ -1,6 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
 body {
   background: center / cover no-repeat url(https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260); 
+  color: rgb(10, 54, 28);
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", Arial, sans-serif;
   height: 100vh; 
   margin: 0;
   padding: 0;
+}
+
+.duration {
+  font-size: 0.95rem;
+}
+
+.playlist {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.playlist__item {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.playlist__item:last-child {
+  border-bottom: 1px solid rgba(30, 30, 30, 0.8);
+}
+
+.playlist-container {
+  background: hsla(20deg, 50%, 60%, 0.5);
+  left: 50%;
+  min-width: 320px;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.title {
+  font-weight: bold;
 }
